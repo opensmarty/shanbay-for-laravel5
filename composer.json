@@ -1,0 +1,19 @@
+{
+    "name": "Cong5/shanbay-for-laravel5",
+    "description": "shanbay for laravel 5",
+    "keywords": [
+        "cong5",
+        "shanbay",
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MrCong",
+            "email": "i@cong5.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    }
+}
