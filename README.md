@@ -67,3 +67,7 @@ $shanbay->getState();
 //获取打卡记录
 $shanbay->getLastCheckIn();
 ```
+
+## LICENSE
+
+[MIT](https://github.com/cong5/shanbay-for-laravel5/blob/master/LICENSE)
