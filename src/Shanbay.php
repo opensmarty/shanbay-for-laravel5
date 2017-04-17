@@ -9,12 +9,12 @@
 namespace Cong5\Shanbay;
 
 
+use Cong5\Shanbay\Traits\Util;
 use Cong5\Shanbay\Traits\AuthTrait;
 use Cong5\Shanbay\Traits\UserTrait;
 use Cong5\Shanbay\Traits\WordTrait;
 use Cong5\Shanbay\Traits\NoteTrait;
 use Cong5\Shanbay\Traits\SentencesTrait;
-use GuzzleHttp\Client;
 
 class Shanbay
 {
@@ -44,14 +44,10 @@ class Shanbay
 
         if (!is_null($access_token) && is_string($access_token)) {
             $this->access_token = $access_token;
+            $this->headers = [
+                'Authorization' => 'Bearer ' . $this->access_token
+            ];
         }
-    }
-
-    protected function getHeaders()
-    {
-        return [
-            'Authorization' => 'Bearer ' . $this->access_token
-        ];
     }
 
 }
