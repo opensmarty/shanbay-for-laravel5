@@ -6,7 +6,7 @@
 ## 安装
 
  ```bash
- composer require cong5/shanbay-for-laravel5
+ composer require cong5/shanbay
  ```
  ## 配置
  
